@@ -2,7 +2,7 @@
 
 This repo contains commands used for routine classificaiton of metagenetic sequence data. Vsearch semi-global alignment is used to merge, quality filter and annotate reads, starting from raw sequence data. Python modules are then used to relate sequences to taxonomic annotations based on top-hit alignments, trim taxonomic annotations according to top-hit alignment percent similarity, and summarize all data into a single table. 
 
-`
+'
 ls *L001_R1_001.fastq.gz | while read i
 do
         a=`echo $i | cut -d'_' -f1-3`
@@ -21,4 +21,4 @@ do
         python ./../4_TrimMtxa2IDs.py ${a}.mtxa2.tax ${a}.Trmd.txt
 done
 
-`
+'
