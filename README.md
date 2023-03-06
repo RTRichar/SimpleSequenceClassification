@@ -1,6 +1,6 @@
 # SimpleSequenceClassification
 
-This repo contains commands used for routine classificaiton of metagenetic sequence data. Starting from raw sequence data, Vsearch semi-global alignment is used to merge, quality filter and annotate reads. Python modules are then used to relate sequences to taxonomic annotations based on top-hit alignments, trim taxonomic annotations according to top-hit alignment percent similarity, and summarize all data into a single table. 
+This repo contains commands used for routine classification of metagenetic sequence data. Starting from raw sequence data, Vsearch semi-global alignment is used to merge, quality filter and annotate reads. Python modules are then used to relate sequences to taxonomic annotations based on top-hit alignments, trim taxonomic annotations according to top-hit alignment percent similarity, and summarize all data into a single table. 
 
 ### How To Use
 
