@@ -2,7 +2,9 @@
 
 This repo contains commands used for routine classification of metagenetic sequence data. Starting from raw sequence data, Vsearch semi-global alignment is used to merge, quality filter and annotate reads. Python modules are then used to relate sequences to taxonomic annotations based on top-hit alignments, trim taxonomic annotations according to top-hit alignment percent similarity, and summarize all data into a single table. 
 
-### How To Use
+---
+
+### Recomendations for general use
 
 The following example illustrates how to run the code on plant ITS2 sequences. 
 
@@ -33,3 +35,10 @@ done
 ls *.Trmd.txt > BaseNames.txt
 python 5_SummarizeData.py -r 5 -b BaseNames.txt -o ITS2_GenusCountTable.csv
 ```
+
+---
+
+### Examples from literature
+
+- Example use in Crone et al. (In Review): [Crone_et_al_2023](https://github.com/RTRichar/SimpleSequenceClassification/blob/main/Crone_et_al_2023.sh)
+
