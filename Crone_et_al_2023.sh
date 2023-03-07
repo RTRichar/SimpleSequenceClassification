@@ -8,7 +8,7 @@ do
 		--fastaout ${a}_merged.fa --fastq_allowmergestagger --threads 28
   # calculate alignments
 	vsearch --usearch_global ${a}_MrgClp.fa --db ITS2_PlantReferenceDB.fa \
-		--id 0.70 --strand both --maxaccepts 100 --maxrejects 50 --maxhits 1 \
+		--id 0.95 --strand both --maxaccepts 100 --maxrejects 50 --maxhits 1 \
 		--gapopen 0TE --gapext 0TE --userout ${a}.vsrch70pi.txt \
 		--userfields query+target+id+alnlen+mism+opens+qlo+qhi+tlo+thi+evalue+bits+qcov \
 		--query_cov 0.8 --threads 28
